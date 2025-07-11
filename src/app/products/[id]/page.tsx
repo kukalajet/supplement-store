@@ -6,7 +6,7 @@ import { dummyProducts } from "@/lib/dummy-data";
 import { useCart } from "@/context/CartContext";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner"; // Changed import
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function ProductDetailsPage() {
   const params = useParams();
@@ -28,7 +28,8 @@ export default function ProductDetailsPage() {
 
   return (
     <div className="grid md:grid-cols-2 gap-8">
-      <div>
+      {/* TODO: Fix images issue. */}
+      {/* <div>
         <Image
           src={product.imageUrl}
           alt={product.name}
@@ -36,7 +37,7 @@ export default function ProductDetailsPage() {
           height={500}
           className="rounded-lg shadow-lg"
         />
-      </div>
+      </div> */}
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">{product.name}</h1>
         <span className="text-sm bg-emerald-100 text-emerald-800 py-1 px-3 rounded-full">

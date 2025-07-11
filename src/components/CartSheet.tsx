@@ -13,7 +13,7 @@ import {
 import { Button } from "./ui/button";
 import { useCart } from "@/context/CartContext";
 import { ShoppingCart, Trash2 } from "lucide-react";
-import Image from "next/image";
+// import Image from "next/image";
 import { Separator } from "./ui/separator";
 import Link from "next/link";
 
@@ -45,13 +45,14 @@ const CartSheet = () => {
                   className="flex items-center justify-between"
                 >
                   <div className="flex items-center gap-4">
-                    <Image
+                    {/* TODO: Uncomment when images are fixed */}
+                    {/* <Image
                       src={item.product.imageUrl}
                       alt={item.product.name}
                       width={64}
                       height={64}
                       className="rounded-md"
-                    />
+                    /> */}
                     <div>
                       <p className="font-semibold">{item.product.name}</p>
                       <p className="text-sm text-muted-foreground">

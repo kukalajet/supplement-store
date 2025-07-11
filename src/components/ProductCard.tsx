@@ -1,7 +1,7 @@
 // src/components/ProductCard.tsx
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { Product } from "@/lib/types";
 import {
@@ -33,13 +33,13 @@ const ProductCard = ({ product }: ProductCardProps) => {
     <Card className="flex flex-col">
       <CardHeader>
         <Link href={`/products/${product.id}`}>
-          <Image
+          {/* <Image
             src={product.imageUrl}
             alt={product.name}
             width={250}
             height={250}
             className="w-full h-auto rounded-t-lg"
-          />
+          /> */}
         </Link>
       </CardHeader>
       <CardContent className="flex-grow">
