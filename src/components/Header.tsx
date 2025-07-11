@@ -2,9 +2,10 @@
 "use client";
 
 import Link from "next/link";
-import { ShoppingCart } from "lucide-react";
-import { Button } from "./ui/button";
-// import CartSheet from "./CartSheet";
+// TODO: Should I remove these imports?
+// import { ShoppingCart } from "lucide-react";
+// import { Button } from "./ui/button";
+import CartSheet from "./CartSheet";
 
 const Header = () => {
   return (
@@ -26,7 +27,7 @@ const Header = () => {
           >
             Provider Portal
           </Link>
-          {/* <CartSheet /> */}
+          <CartSheet />
         </div>
       </nav>
     </header>
