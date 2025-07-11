@@ -86,7 +86,7 @@ export default function AllProductsPage() {
           </Select>
         </div>
         <div>
-          <Label>
+          <Label className="mb-2 block">
             Price Range: ${priceRange[0]} - ${priceRange[1]}
           </Label>
           <Slider
