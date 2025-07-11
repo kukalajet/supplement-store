@@ -30,11 +30,44 @@ This is a full-stack, dual-interface e-commerce application built with Next.js f
 
 ## Getting Started
 
+Follow these steps to get the project up and running on your local machine.
+
+### Prerequisites
+
+Make sure you have Node.js (version 18.x or later) and npm installed on your system.
+
 ### 1. Installation
 
-Clone the repository and install the dependencies.
+1.  Clone the repository to your local machine:
+    ```bash
+    git clone https://github.com/kukalajet/supplement-store.git
+    ```
+
+2.  Navigate to the project directory:
+    ```bash
+    cd supplement-store
+    ```
+
+3.  Install the project dependencies:
+    ```bash
+    npm install
+    ```
+
+### 2. Running the Development Server
+
+Once the dependencies are installed, you can start the development server:
 
 ```bash
-git clone <your-repo-url>
-cd supplement-store
-npm install
+npm run dev
+```
+
+This command starts the application in development mode with Next.js's Turbopack for faster performance. Open [http://localhost:3000](http://localhost:3000) to view the application in your browser. The page will automatically reload as you make edits.
+
+## Available Scripts
+
+In the project directory, you can run the following scripts:
+
+-   `npm run dev`: Runs the app in development mode.
+-   `npm run build`: Builds the app for production.
+-   `npm run start`: Starts a production server.
+-   `npm run lint`: Runs the linter to check for code quality issues.
