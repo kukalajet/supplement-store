@@ -9,7 +9,8 @@ export const dummyProducts: Product[] = [
     category: "Vitamins",
     price: 15.99,
     description: "High-potency Vitamin C for immune support.",
-    imageUrl: "https://via.placeholder.com/300x300.png?text=Vitamin+C",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVitjgoaftpEG3IeOhMcK4Th33xl8zbd54Iw&s",
     isBestSeller: true,
   },
   {
@@ -18,7 +19,8 @@ export const dummyProducts: Product[] = [
     category: "Minerals",
     price: 12.5,
     description: "Essential iron supplement for energy levels.",
-    imageUrl: "https://via.placeholder.com/300x300.png?text=Iron+Plus",
+    imageUrl:
+      "https://kosova.calivita.com/common/images/prdpic3d/CV0278/CV0278_01.jpg",
     isBestSeller: false,
   },
   {
@@ -27,7 +29,8 @@ export const dummyProducts: Product[] = [
     category: "Proteins",
     price: 45.0,
     description: "Pure whey protein for muscle growth and recovery.",
-    imageUrl: "https://via.placeholder.com/300x300.png?text=Whey+Protein",
+    imageUrl:
+      "https://kosport.al/shop/185-large_default/iso-whey-zero-2270g.jpg",
     isBestSeller: true,
   },
   {
@@ -36,7 +39,8 @@ export const dummyProducts: Product[] = [
     category: "Other",
     price: 22.0,
     description: "Supports heart and brain health.",
-    imageUrl: "https://via.placeholder.com/300x300.png?text=Omega-3",
+    imageUrl:
+      "https://m.media-amazon.com/images/I/71EFaimGdaL._UF1000,1000_QL80_.jpg",
     isBestSeller: false,
   },
   {
@@ -45,7 +49,8 @@ export const dummyProducts: Product[] = [
     category: "Vitamins",
     price: 25.0,
     description: "A complete daily multivitamin for overall wellness.",
-    imageUrl: "https://via.placeholder.com/300x300.png?text=Multivitamin",
+    imageUrl:
+      "https://shop.evergreen.al/media/d5/69/a1/1694990187/full-spectrum.jpg?ts=1694990187",
     isBestSeller: true,
   },
 ];

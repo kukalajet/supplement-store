@@ -14,8 +14,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-// TODO: JETON! Uncomment when images are available
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -58,14 +57,13 @@ export default function HomePage() {
                 <div className="p-1">
                   <Card>
                     <CardContent className="flex aspect-square items-center justify-center p-6 flex-col">
-                      {/* TODO: JETON! */}
-                      {/* <Image
+                      <Image
                         src={product.imageUrl}
                         alt={product.name}
                         width={150}
                         height={150}
                         className="mb-4"
-                      /> */}
+                      />
                       <span className="text-xl font-semibold">
                         {product.name}
                       </span>
