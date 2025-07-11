@@ -58,9 +58,9 @@ export default function AllProductsPage() {
   }, [products, searchTerm, category, priceRange, showBestSellers, sortBy]);
 
   return (
-    <div className="flex">
+    <div className="flex flex-col md:flex-row">
       {/* Filters Sidebar */}
-      <aside className="w-1/4 pr-8 space-y-6">
+      <aside className="w-full md:w-1/4 md:pr-8 space-y-6 mb-6 md:mb-0">
         <h3 className="text-xl font-semibold">Filters</h3>
         <div>
           <Label>Search</Label>
@@ -108,7 +108,7 @@ export default function AllProductsPage() {
       </aside>
 
       {/* Products Grid */}
-      <main className="w-3/4">
+      <main className="w-full md:w-3/4">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold">
             All Products ({filteredAndSortedProducts.length})
