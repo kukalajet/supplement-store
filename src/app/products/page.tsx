@@ -3,7 +3,6 @@
 
 import { useState, useMemo } from "react";
 import { dummyProducts } from "@/lib/dummy-data";
-import { Product } from "@/lib/types";
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -18,9 +17,6 @@ import { Label } from "@/components/ui/label";
 import ProductCard from "@/components/ProductCard"; // We will create this
 
 export default function AllProductsPage() {
-  // TODO: Should I remove this state and just use dummyProducts directly?
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [products, setProducts] = useState<Product[]>(dummyProducts);
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("all");
   const [priceRange, setPriceRange] = useState([0, 100]);
@@ -28,7 +24,7 @@ export default function AllProductsPage() {
   const [sortBy, setSortBy] = useState("name-asc");
 
   const filteredAndSortedProducts = useMemo(() => {
-    const result = products
+    const result = dummyProducts
       .filter(
         (p) =>
           p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -55,7 +51,7 @@ export default function AllProductsPage() {
         break;
     }
     return result;
-  }, [products, searchTerm, category, priceRange, showBestSellers, sortBy]);
+  }, [searchTerm, category, priceRange, showBestSellers, sortBy]);
 
   return (
     <div className="flex flex-col md:flex-row">
